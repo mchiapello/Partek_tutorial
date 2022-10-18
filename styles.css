@@ -1,0 +1,22 @@
+
+
+#vcenter {
+  vertical-align: top;
+}
+
+.reveal h2 {
+    font-size: 65px;
+    color: #4d8dc9;
+    text-align: left;
+}
+
+h2:after
+{
+    content:' ';
+    display:block;
+    border:2px solid #4d8dc9;
+}
+
+.f30 {
+    font-size: 30px;
+}

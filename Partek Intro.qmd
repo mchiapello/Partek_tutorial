@@ -1,0 +1,86 @@
+---
+title: "Partek tutorial"
+subtitle: "Azienda Ospedaliero Universitaria Careggi"
+author: "Marco Chiapello"
+format:
+  revealjs:
+      logo: "Agilent_Technologies-Logo.svg.png"
+      footer: "Marco Chiapello - Introduzione a Partek" 
+      theme: simple
+      css: styles.css
+---
+
+## Introduzione
+
+### Agenda (per oggi)
+
+1.  Introduzione generale alla bioinformatica
+    1.  Diversi tipi di file (vcf, bed, fasta, fastq, gff, ...)
+    2.  Cosa fanno i principali software
+2.  Overview della pipeline per chiamata delle varianti
+3.  Introduzione a Partek
+4.  Creazione di pipeline con Partek
+
+## Introduzione
+
+### Agenda (per oggi)
+
+::: {.f30}
+| Orari         | Temi                             |
+|---------------|----------------------------------|
+| 10:00 - 11:00 | Introduzione                     |
+| 11:00 - 11:15 | Pausa                            |
+| 11:15 - 12:00 | Chiamata varianti                |
+| 12:00 - 12:30 | QA session                       |
+| 14:00 - 15:00 | Introduzione a Partek            |
+| 15:00 - 15:15 | Pausa                            |
+| 15:15 - 16:00 | Creazione di pipeline con Partek |
+| 16:00 - 16:30 | QA session                       |
+:::
+
+## Introduzione
+
+### Agenda (per domani)
+
+1. Creazione di pipeline con Partek (hand-on)
+1. Discussione Custom report
+
+::: {.f30}
+| Orari         | Temi                             |
+|---------------|----------------------------------|
+| 9:30 - 11:00  | Creazione di pipeline con Partek |
+| 11:00 - 11:15  | Pausa |
+| 11:15 - 12:00  | Custom report |
+:::
+
+## Introduzione
+
+### Tutor
+
+-   Marco Chiapello, PhD
+-   Bioinformatico
+-   Lavoro per Agilent da 5 mesi
+-   Ho sempre lavorato in Università europee occupandomi di analisi bioinformatiche
+
+# Bioinformatic workflows
+
+![](images/wf.png){.absolute top="200" left="200" width="300" height="500"}
+
+## Sequence reads {.test}
+
+### Fastq format
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
