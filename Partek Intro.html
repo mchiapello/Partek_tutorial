@@ -434,14 +434,106 @@
 <li>Ho sempre lavorato in Università europee occupandomi di analisi bioinformatiche</li>
 </ul>
 </section>
-<section>
-<section id="bioinformatic-workflows" class="title-slide slide level1 center">
-<h1>Bioinformatic workflows</h1>
-<p><img data-src="images/wf.png" class="absolute" style="top: 200px; left: 200px; width: 300px; height: 500px; "></p>
+<section id="pipeline-per-chiamata-delle-varianti" class="slide level2">
+<h2>Pipeline per chiamata delle varianti</h2>
+<p><img data-src="images/wf.png" class="absolute" style="top: 120px; left: 350px; width: 350px; height: 550px; "></p>
 </section>
-<section id="sequence-reads" class="slide level2 test">
-<h2>Sequence reads</h2>
-<h3 id="fastq-format">Fastq format</h3>
+<section id="diversi-tipi-di-file" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fasta-file">FASTA file</h3>
+<div class="callout callout-important no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Definizione</strong></p>
+</div>
+<div class="callout-content">
+<p>Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="diversi-tipi-di-file-1" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fasta-file-1">FASTA file</h3>
+<div class="callout callout-important no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Definizione</strong></p>
+</div>
+<div class="callout-content">
+<p>Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo “&gt;”</p>
+</div>
+</div>
+</div>
+<pre><code>&gt;NM_001404729.1 Oryza sativa ribulose bisphosphate carboxylase small chain A
+CTCAACAGCACTGCTACTGGACATACTCTACTACTACTAGCCAGTAAGCTAGCTAACTAACTACGTGGCT
+ATGGCCCCCACCGTGATGGCCTCCTCGGCCACCTCCGTGGCTCCATTCCAAGGGCTCAANNNNNNNNNNN</code></pre>
+</section>
+<section id="diversi-tipi-di-file-2" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fasta-file-2">FASTA file</h3>
+<div class="callout callout-important no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Definizione</strong></p>
+</div>
+<div class="callout-content">
+<p>Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo “&gt;”</p>
+</div>
+</div>
+</div>
+<pre><code>&gt;MCHU - Calmodulin - Human, rabbit, bovine, rat, and chicken
+MADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTID
+FPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREA
+DIDGDGQVNYEEFVQMMTAKXXXXXX</code></pre>
+</section>
+<section id="diversi-tipi-di-file-3" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fasta-file-3">FASTA file</h3>
+<p>È possibile creare dei file che contengano più sequenze concatenando singoli FASTA file.</p>
+<pre><code>&gt;MCHU - Calmodulin - Human, rabbit, bovine, rat, and chicken
+MADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTID
+FPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREA
+DIDGDGQVNYEEFVQMMTAK
+
+&gt;gi|5524211|gb|AAD44166.1| cytochrome b [Elephas maximus maximus]
+LCLYTHIGRNIYYGSYLYSETWNTGIMLLLITMATAFMGYVLPWGQMSFWGATVITNLFSAIPYIGTNLV
+EWIWGGFSVDKATLNRFFAFHFILPFTMVALAGVHLTFLHETGSNNPLGLTSDSDKIPFHPYYTIKDFLG
+LLILILLLLLLALLSPDMLGDPDNHMPADPLNTPLHIKPEWYFLFAYAILRSVPNKLGGVLALFLSIVIL
+GLMPFLHTSKHRSMMLRPLSQALFWTLTMDLLTLTWIGSQPVEYPYTIIGQMASILYFSIILAFLPIAGX
+IENY*</code></pre>
+</section>
+<section id="diversi-tipi-di-file-4" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fasta-file-4">FASTA file</h3>
+<h4 id="nucleotidi">Nucleotidi</h4>
+
+<img data-src="images/nucl.png" class="r-stretch"></section>
+<section id="diversi-tipi-di-file-5" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fasta-file-5">FASTA file</h3>
+<h4 id="aminoacidi">Aminoacidi</h4>
+
+<img data-src="images/amino.png" class="r-stretch"></section>
+<section id="diversi-tipi-di-file-6" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fastq-format">FASTQ format</h3>
+</section>
+<section id="diversi-tipi-di-file-7" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="sambam-format">SAM/BAM format</h3>
+</section>
+<section id="diversi-tipi-di-file-8" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="bed-format">BED format</h3>
+</section>
+<section id="diversi-tipi-di-file-9" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="gff-format">GFF format</h3>
+</section>
+<section id="diversi-tipi-di-file-10" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="vcf-format">VCF format</h3>
 </section>
 <section id="bullets" class="slide level2">
 <h2>Bullets</h2>
@@ -463,7 +555,7 @@
 <img src="Agilent_Technologies-Logo.svg.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>Marco Chiapello - Introduzione a Partek</p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 

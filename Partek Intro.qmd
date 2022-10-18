@@ -25,7 +25,7 @@ format:
 
 ### Agenda (per oggi)
 
-::: {.f30}
+::: f30
 | Orari         | Temi                             |
 |---------------|----------------------------------|
 | 10:00 - 11:00 | Introduzione                     |
@@ -42,15 +42,15 @@ format:
 
 ### Agenda (per domani)
 
-1. Creazione di pipeline con Partek (hand-on)
-1. Discussione Custom report
+1.  Creazione di pipeline con Partek (hand-on)
+2.  Discussione Custom report
 
-::: {.f30}
+::: f30
 | Orari         | Temi                             |
 |---------------|----------------------------------|
 | 9:30 - 11:00  | Creazione di pipeline con Partek |
-| 11:00 - 11:15  | Pausa |
-| 11:15 - 12:00  | Custom report |
+| 11:00 - 11:15 | Pausa                            |
+| 11:15 - 12:00 | Custom report                    |
 :::
 
 ## Introduzione
@@ -62,13 +62,101 @@ format:
 -   Lavoro per Agilent da 5 mesi
 -   Ho sempre lavorato in Università europee occupandomi di analisi bioinformatiche
 
-# Bioinformatic workflows
+## Pipeline per chiamata delle varianti
 
-![](images/wf.png){.absolute top="200" left="200" width="300" height="500"}
+![](images/wf.png){.absolute top="120" left="350" width="350" height="550"}
 
-## Sequence reads {.test}
+## Diversi tipi di file
 
-### Fastq format
+### FASTA file
+
+::: {.callout-important icon="false"}
+## Definizione
+
+Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera.
+:::
+
+## Diversi tipi di file
+
+### FASTA file
+
+::: {.callout-important icon="false"}
+## Definizione
+
+Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo ">"
+:::
+
+    >NM_001404729.1 Oryza sativa ribulose bisphosphate carboxylase small chain A
+    CTCAACAGCACTGCTACTGGACATACTCTACTACTACTAGCCAGTAAGCTAGCTAACTAACTACGTGGCT
+    ATGGCCCCCACCGTGATGGCCTCCTCGGCCACCTCCGTGGCTCCATTCCAAGGGCTCAANNNNNNNNNNN
+
+
+## Diversi tipi di file
+
+### FASTA file
+
+::: {.callout-important icon="false"}
+## Definizione
+
+Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo ">"
+:::
+
+    >MCHU - Calmodulin - Human, rabbit, bovine, rat, and chicken
+    MADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTID
+    FPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREA
+    DIDGDGQVNYEEFVQMMTAKXXXXXX
+  
+## Diversi tipi di file
+
+### FASTA file 
+È possibile creare dei file che contengano più sequenze concatenando singoli FASTA file.
+
+
+    >MCHU - Calmodulin - Human, rabbit, bovine, rat, and chicken
+    MADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTID
+    FPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREA
+    DIDGDGQVNYEEFVQMMTAK
+
+    >gi|5524211|gb|AAD44166.1| cytochrome b [Elephas maximus maximus]
+    LCLYTHIGRNIYYGSYLYSETWNTGIMLLLITMATAFMGYVLPWGQMSFWGATVITNLFSAIPYIGTNLV
+    EWIWGGFSVDKATLNRFFAFHFILPFTMVALAGVHLTFLHETGSNNPLGLTSDSDKIPFHPYYTIKDFLG
+    LLILILLLLLLALLSPDMLGDPDNHMPADPLNTPLHIKPEWYFLFAYAILRSVPNKLGGVLALFLSIVIL
+    GLMPFLHTSKHRSMMLRPLSQALFWTLTMDLLTLTWIGSQPVEYPYTIIGQMASILYFSIILAFLPIAGX
+    IENY*
+  
+## Diversi tipi di file
+
+### FASTA file 
+#### Nucleotidi
+
+![](images/nucl.png)
+  
+## Diversi tipi di file
+
+### FASTA file 
+#### Aminoacidi
+
+![](images/amino.png)
+
+## Diversi tipi di file
+
+### FASTQ format
+
+## Diversi tipi di file
+
+### SAM/BAM format
+
+## Diversi tipi di file
+
+### BED format
+
+## Diversi tipi di file
+
+### GFF format
+
+## Diversi tipi di file
+
+### VCF format
 
 ## Bullets
 
