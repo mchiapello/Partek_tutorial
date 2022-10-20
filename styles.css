@@ -1,7 +1,15 @@
+.centerI {
+  display: block;
+  margin-left: 200px;
+  margin-right: auto;
+  width: 85%;
+}
 
-
-#vcenter {
-  vertical-align: top;
+.centerI2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
 }
 
 .reveal h2 {
@@ -19,4 +27,8 @@ h2:after
 
 .f30 {
     font-size: 30px;
+}
+
+.f20 {
+    font-size: 20px;
 }

@@ -436,7 +436,7 @@
 </section>
 <section id="pipeline-per-chiamata-delle-varianti" class="slide level2">
 <h2>Pipeline per chiamata delle varianti</h2>
-<p><img data-src="images/wf.png" class="absolute" style="top: 120px; left: 350px; width: 350px; height: 550px; "></p>
+<p><img data-src="images/wf.png" class="absolute" style="top: 100px; left: 300px; width: 4350&quot;; height: 550px; "></p>
 </section>
 <section id="diversi-tipi-di-file" class="slide level2">
 <h2>Diversi tipi di file</h2>
@@ -447,10 +447,11 @@
 <p><strong>Definizione</strong></p>
 </div>
 <div class="callout-content">
-<p>Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera.</p>
+<p>Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima linea antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo “&gt;”</p>
 </div>
 </div>
 </div>
+<p>I file contenenti queste sequenze possono avere varie desinenze: fasta, fna, ffn, faa, fa, frn</p>
 </section>
 <section id="diversi-tipi-di-file-1" class="slide level2">
 <h2>Diversi tipi di file</h2>
@@ -461,7 +462,7 @@
 <p><strong>Definizione</strong></p>
 </div>
 <div class="callout-content">
-<p>Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo “&gt;”</p>
+<p>Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima linea antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo “&gt;”</p>
 </div>
 </div>
 </div>
@@ -478,7 +479,7 @@ ATGGCCCCCACCGTGATGGCCTCCTCGGCCACCTCCGTGGCTCCATTCCAAGGGCTCAANNNNNNNNNNN</code></p
 <p><strong>Definizione</strong></p>
 </div>
 <div class="callout-content">
-<p>Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo “&gt;”</p>
+<p>Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima linea antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo “&gt;”</p>
 </div>
 </div>
 </div>
@@ -517,45 +518,264 @@ IENY*</code></pre>
 <img data-src="images/amino.png" class="r-stretch"></section>
 <section id="diversi-tipi-di-file-6" class="slide level2">
 <h2>Diversi tipi di file</h2>
-<h3 id="fastq-format">FASTQ format</h3>
+<h3 id="fasta-file-6">FASTA file</h3>
+<div class="centerI2">
+<p><img data-src="images/questions.png"></p>
+</div>
 </section>
 <section id="diversi-tipi-di-file-7" class="slide level2">
 <h2>Diversi tipi di file</h2>
-<h3 id="sambam-format">SAM/BAM format</h3>
+<h3 id="fastq-format">FASTQ format</h3>
+<div class="callout callout-important no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Definizione</strong></p>
+</div>
+<div class="callout-content">
+<p>Il formato FASTQ è un formato di testo per rappresentare sia le sequenze biologiche (normalmente nucleotidiche) sia il corrispettivo valore di qualità. Sia le sequenze che lo score di qualità sono codificati da una singola lettera (carattere ASCII) per brevità.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="diversi-tipi-di-file-8" class="slide level2">
 <h2>Diversi tipi di file</h2>
-<h3 id="bed-format">BED format</h3>
+<h3 id="fastq-format-1">FASTQ format</h3>
+<div class="callout callout-important no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Definizione</strong></p>
+</div>
+<div class="callout-content">
+<p>Il formato FASTQ è un formato di testo per rappresentare sia le sequenze biologiche (normalmente nucleotidiche) sia il corrispettivo valore di qualità. Sia le sequenze che lo score di qualità sono codificati da una singola lettera (carattere ASCII) per brevità.</p>
+</div>
+</div>
+</div>
+<div class="f20">
+<p>Un file FASTQ è identificato da 4 linee:</p>
+<ul>
+<li>Linea 1: inizia con il simbolo “@” ed è seguita dall’identificativo della sequenza (come nelle sequenze FASTA)</li>
+<li>Linea 2: contiene la sequenza nucleotidica</li>
+<li>Linea 3: inizia con un “+” e può contenere descrizioni aggiuntive della sequenza</li>
+<li>Linea 4: contiene i valori di qualità dei singoli nucleotidi</li>
+</ul>
+</div>
 </section>
 <section id="diversi-tipi-di-file-9" class="slide level2">
 <h2>Diversi tipi di file</h2>
-<h3 id="gff-format">GFF format</h3>
+<h3 id="fastq-format-2">FASTQ format</h3>
+<div class="callout callout-important no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Definizione</strong></p>
+</div>
+<div class="callout-content">
+<p>Il formato FASTQ è un formato di testo per rappresentare sia le sequenze biologiche (normalmente nucleotidiche) sia il corrispettivo valore di qualità. Sia le sequenze che lo score di qualità sono codificati da una singola lettera (carattere ASCII) per brevità.</p>
+</div>
+</div>
+</div>
+<pre><code>@SEQ_ID
+GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
++
+!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF&gt;&gt;&gt;&gt;&gt;&gt;CCCCCCC65</code></pre>
 </section>
 <section id="diversi-tipi-di-file-10" class="slide level2">
 <h2>Diversi tipi di file</h2>
+<h3 id="fastq-format-3">FASTQ format</h3>
+<h4 id="cosa-significa-score-di-qualità">Cosa significa “score di qualità”?</h4>
+<div class="f20">
+<p>Lo score di qualità è usato per identificare la <strong>probabilità di corretta identificazione del corrispondente nucleotide</strong>.</p>
+</div>
+
+<img data-src="images/phred1.png" class="r-stretch"><aside class="notes">
+<ul>
+<li>I numeri da 33 a 126 sono i numeri ASCII corrispondenti alla lettera che indicano</li>
+<li>Score più alto osservato 40, quindi molti si fermano li</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="diversi-tipi-di-file-11" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fastq-format-4">FASTQ format</h3>
+<h4 id="cosa-significa-score-di-qualità-1">Cosa significa “score di qualità”?</h4>
+<div class="f20">
+<p>Lo score di qualità è usato per identificare la <strong>probabilità di corretta identificazione del corrispondente nucleotide</strong>.</p>
+</div>
+<div class="centerI">
+<p><img data-src="images/phred2.png"></p>
+</div>
+</section>
+<section id="diversi-tipi-di-file-12" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fastq-format-5">FASTQ format</h3>
+<p>I FASTQ file possono avere dimensioni molto grandi, per questo nella maggior parte dei casi non avrete a che fare con ilMioFile.fastq, ma con ilMioFile.fastq.gz.</p>
+<p>Questo significa che il file è compresso, quindi non leggibile da un editor di testa senza prima essere de-compresso.</p>
+</section>
+<section id="diversi-tipi-di-file-13" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="fastq-file">FASTQ file</h3>
+<div class="centerI2">
+<p><img data-src="images/questions.png"></p>
+</div>
+</section>
+<section id="diversi-tipi-di-file-14" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="sambam-format">SAM/BAM format</h3>
+<div class="callout callout-important no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Definizione</strong></p>
+</div>
+<div class="callout-content">
+<p>I file SAM (Sequence Alignment Map) sono file di testo creati originariamente per contenere le sequenze biologiche allineate ad una sequenza di riferimento (genoma).</p>
+</div>
+</div>
+</div>
+<div class="f30">
+<ul>
+<li>Il formato è stato sviluppato per il progetto 1000 Genome.</li>
+<li>Questo formato è largamente usato per le sequenze nucleotiche generate dalle tecnologie NGS.</li>
+<li>Nella maggior parte dei casi non vi troverete a che fare con un file SAM, ma con un file BAM</li>
+</ul>
+</div>
+</section>
+<section id="diversi-tipi-di-file-15" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="sambam-format-1">SAM/BAM format</h3>
+<h4 id="differenza-tra-sam-e-bam">Differenza tra SAM e BAM?</h4>
+<div class="fragment">
+<ul>
+<li>In realtà nessuna! I due file sono identici nel contenuto</li>
+<li>In pratica il file SAM può essere letto da un editor di testo, mentre il file BAM no.</li>
+<li>Il BAM è un file binary, cioè machine-readable. È più compresso del file human-readable.</li>
+</ul>
+</div>
+</section>
+<section id="diversi-tipi-di-file-16" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="sambam-format-2">SAM/BAM format</h3>
+<div class="f30">
+<p>I file SAM/BAM consistono in 2 parti una intestazione (header) e un allineamento.</p>
+<ul>
+<li>L’<strong>intestazione</strong>
+<ul>
+<li>(se presente) dev’essere prima dell’allineamento</li>
+<li>Ogni riga dell’intestazione inizia con il simbolo “@”</li>
+<li>Una coppia di lettere che segue il simbolo “@” indica la sezione dell’intestazione</li>
+</ul></li>
+</ul>
+<div class="code">
+<pre><code>@RG     ID:1    SM:C5926_BM_IonCode_0118
+@PG     ID:samtools     PN:samtools    VN:1.16.1    CL:samtools view -H C5926_BM_IonCode_0118.reassembled.bam</code></pre>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li><span class="citation" data-cites="RG">@RG</span> = read group
+<ul>
+<li>ID = Read group identifier</li>
+<li>SM = Sample</li>
+</ul></li>
+<li><span class="citation" data-cites="PG">@PG</span> = Program
+<ul>
+<li>ID = Program record identifier</li>
+<li>PN = Program name</li>
+<li>VN = software version</li>
+<li>Cl = command line</li>
+</ul></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="diversi-tipi-di-file-17" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="sambam-format-3">SAM/BAM format</h3>
+<div class="f30">
+<p>I file SAM/BAM consistono in 2 parti una intestazione (header) e un allineamento.</p>
+<ul>
+<li>L’<strong>allineamento</strong></li>
+</ul>
+</div>
+<p><img data-src="images/bam2.png" class="absolute" style="top: 400px; left: 0px; width: 700px; height: auto; "></p>
+<p><img data-src="images/bam1.png" class="absolute" style="top: 300px; right: 0px; width: 350px; height: auto; "></p>
+<aside class="notes">
+<ul>
+<li><p>11 campi obbligatori</p></li>
+<li><p>Metadati non obbligatori</p></li>
+<li><p>Concise Idiosyncratic Gapped Alignment Report (CIGAR) string</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="diversi-tipi-di-file-18" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="sambam-format-4">SAM/BAM format</h3>
+<h4 id="flags">FLAGS</h4>
+<p><img data-src="images/flags1.png" class="absolute" style="left: 250px; width: 600px; height: auto; "></p>
+<div class="f20">
+<p><a href="https://broadinstitute.github.io/picard/explain-flags.html">Flag calculator</a></p>
+</div>
+</section>
+<section id="diversi-tipi-di-file-19" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="sambam-format-5">SAM/BAM format</h3>
+<h4 id="cigar">CIGAR</h4>
+<p><img data-src="images/cigar1.png" class="absolute" style="top: 250px; left: 0px; width: 500px; height: auto; "></p>
+<div class="fragment">
+<p><img data-src="images/cigar2.png" class="absolute" style="top: 300px; right: 0px; width: 400px; height: auto; "></p>
+</div>
+</section>
+<section id="diversi-tipi-di-file-20" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="bed-format">BED format</h3>
+</section>
+<section id="diversi-tipi-di-file-21" class="slide level2">
+<h2>Diversi tipi di file</h2>
+<h3 id="gff-format">GFF format</h3>
+</section>
+<section id="diversi-tipi-di-file-22" class="slide level2">
+<h2>Diversi tipi di file</h2>
 <h3 id="vcf-format">VCF format</h3>
 </section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
-<ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
-</ul>
+<section>
+<section id="external-software" class="title-slide slide level1 center">
+<h1>External Software</h1>
+
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="igv" class="slide level2">
+<h2>IGV</h2>
 
 <img src="Agilent_Technologies-Logo.svg.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>Marco Chiapello - Introduzione a Partek</p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -767,48 +987,6 @@ IENY*</code></pre>
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

@@ -64,7 +64,7 @@ format:
 
 ## Pipeline per chiamata delle varianti
 
-![](images/wf.png){.absolute top="120" left="350" width="350" height="550"}
+![](images/wf.png){.absolute top="100" left="300" width=4350" height="550"}
 
 ## Diversi tipi di file
 
@@ -73,9 +73,11 @@ format:
 ::: {.callout-important icon="false"}
 ## Definizione
 
-Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera.
+Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima linea antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo ">"
 :::
 
+I file contenenti queste sequenze possono avere varie desinenze: fasta, fna, ffn, faa, fa, frn
+
 ## Diversi tipi di file
 
 ### FASTA file
@@ -83,7 +85,7 @@ Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidi
 ::: {.callout-important icon="false"}
 ## Definizione
 
-Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo ">"
+Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima linea antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo ">"
 :::
 
     >NM_001404729.1 Oryza sativa ribulose bisphosphate carboxylase small chain A
@@ -98,7 +100,7 @@ Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidi
 ::: {.callout-important icon="false"}
 ## Definizione
 
-Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo ">"
+Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidiche o le sequenze aminoacidiche. Sia i nucleotidi che gli aminoacidi sono rappresentati da una singola lettera. Sulla prima linea antecedente alla sequenza nucleotidica/aminoacidica viene riportato il nome della sequenza, preceduto dal simbolo ">"
 :::
 
     >MCHU - Calmodulin - Human, rabbit, bovine, rat, and chicken
@@ -140,11 +142,216 @@ Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidi
 
 ## Diversi tipi di file
 
+### FASTA file 
+:::{.centerI2}
+![](images/questions.png)
+:::
+
+## Diversi tipi di file
+
 ### FASTQ format
+
+
+::: {.callout-important icon="false"}
+## Definizione
+
+Il formato FASTQ è un formato di testo per rappresentare sia le sequenze biologiche (normalmente nucleotidiche) sia il corrispettivo valore di qualità. Sia le sequenze che lo score di qualità sono codificati da una singola lettera (carattere ASCII) per brevità.
+:::
+
+## Diversi tipi di file
+
+### FASTQ format
+
+
+::: {.callout-important icon="false"}
+## Definizione
+
+Il formato FASTQ è un formato di testo per rappresentare sia le sequenze biologiche (normalmente nucleotidiche) sia il corrispettivo valore di qualità. Sia le sequenze che lo score di qualità sono codificati da una singola lettera (carattere ASCII) per brevità.
+:::
+
+:::{.f20}
+Un file FASTQ è identificato da 4 linee:
+
+- Linea 1: inizia con il simbolo "@" ed è seguita dall'identificativo della sequenza (come nelle sequenze FASTA)
+- Linea 2: contiene la sequenza nucleotidica
+- Linea 3: inizia con un "+" e può contenere descrizioni aggiuntive della sequenza
+- Linea 4: contiene i valori di qualità dei singoli nucleotidi
+:::
+
+## Diversi tipi di file
+
+### FASTQ format
+
+
+::: {.callout-important icon="false"}
+## Definizione
+
+Il formato FASTQ è un formato di testo per rappresentare sia le sequenze biologiche (normalmente nucleotidiche) sia il corrispettivo valore di qualità. Sia le sequenze che lo score di qualità sono codificati da una singola lettera (carattere ASCII) per brevità.
+:::
+
+    @SEQ_ID
+    GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
+    +
+    !''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
+
+
+## Diversi tipi di file
+
+### FASTQ format
+
+#### Cosa significa "score di qualità"?
+
+:::{.f20}
+Lo score di qualità è usato per identificare la **probabilità di corretta identificazione del corrispondente nucleotide**. 
+:::
+
+
+![](images/phred1.png)
+
+:::{.notes}
+- I numeri da 33 a 126 sono i numeri ASCII corrispondenti alla lettera che indicano
+- Score più alto osservato 40, quindi molti si fermano li
+:::
+
+
+## Diversi tipi di file
+
+### FASTQ format
+
+#### Cosa significa "score di qualità"?
+
+:::{.f20}
+Lo score di qualità è usato per identificare la **probabilità di corretta identificazione del corrispondente nucleotide**. 
+:::
+
+:::{.centerI}
+![](images/phred2.png)
+:::
+
+## Diversi tipi di file
+
+### FASTQ format
+
+I FASTQ file possono avere dimensioni molto grandi, per questo nella maggior parte dei casi non avrete a che fare con ilMioFile.fastq, ma con ilMioFile.fastq.gz. 
+
+Questo significa che il file è compresso, quindi non leggibile da un editor di testa senza prima essere de-compresso.
+
+
+## Diversi tipi di file
+
+### FASTQ file 
+:::{.centerI2}
+![](images/questions.png)
+:::
+
 
 ## Diversi tipi di file
 
 ### SAM/BAM format
+
+::: {.callout-important icon="false"}
+## Definizione
+I file SAM (Sequence Alignment Map) sono file di testo creati originariamente per contenere le sequenze biologiche allineate ad una sequenza di riferimento (genoma).
+
+:::
+
+:::{.f30}
+- Il formato è stato sviluppato per il progetto 1000 Genome.
+- Questo formato è largamente usato per le sequenze nucleotiche generate dalle tecnologie NGS.
+- Nella maggior parte dei casi non vi troverete a che fare con un file SAM, ma con un file BAM
+:::
+
+
+
+## Diversi tipi di file
+
+### SAM/BAM format
+#### Differenza tra SAM e BAM?
+
+:::{.fragment}
+- In realtà nessuna! I due file sono identici nel contenuto
+- In pratica il file SAM può essere letto da un editor di testo, mentre il file BAM no.
+- Il BAM è un file binary, cioè machine-readable. È più compresso del file human-readable.
+:::
+
+## Diversi tipi di file
+
+### SAM/BAM format
+:::{.f30}
+I file SAM/BAM consistono in 2 parti una intestazione (header) e un allineamento.
+
+- L'**intestazione**
+    - (se presente) dev'essere prima dell'allineamento
+    - Ogni riga dell'intestazione inizia con il simbolo "@"
+    - Una coppia di lettere che segue il simbolo "@" indica la sezione dell'intestazione
+
+:::{.code}    
+    
+    @RG     ID:1    SM:C5926_BM_IonCode_0118
+    @PG     ID:samtools     PN:samtools    VN:1.16.1    CL:samtools view -H C5926_BM_IonCode_0118.reassembled.bam
+
+:::
+:::
+
+
+:::{.notes}
+- @RG = read group
+    - ID = Read group identifier
+    - SM = Sample
+    
+- @PG = Program
+    - ID = Program record identifier
+    - PN = Program name
+    - VN = software version
+    - Cl = command line
+:::
+
+
+## Diversi tipi di file
+
+### SAM/BAM format
+
+:::{.f30}
+I file SAM/BAM consistono in 2 parti una intestazione (header) e un allineamento.
+
+- L'**allineamento**
+:::
+
+![](images/bam2.png){.absolute top=400 left=0 width="700" height=auto}
+
+![](images/bam1.png){.absolute top=300 right=0 width="350" height=auto}
+
+
+:::{.notes}
+- 11 campi obbligatori
+- Metadati non obbligatori
+
+- Concise Idiosyncratic Gapped Alignment Report (CIGAR) string
+:::
+
+## Diversi tipi di file
+
+### SAM/BAM format
+
+#### FLAGS
+
+![](images/flags1.png){.absolute left="250" width="600" height=auto}
+
+:::{.f20}
+[Flag calculator](https://broadinstitute.github.io/picard/explain-flags.html)
+:::
+
+## Diversi tipi di file
+
+### SAM/BAM format
+
+#### CIGAR
+
+![](images/cigar1.png){.absolute top="250" left="0" width="500" height=auto}
+
+:::{.fragment}
+![](images/cigar2.png){.absolute top="300" right="0" width="400" height=auto}
+:::
 
 ## Diversi tipi di file
 
@@ -158,17 +365,7 @@ Il Formato FASTA è un formato di testo per rappresentare le sequenze nucleotidi
 
 ### VCF format
 
-## Bullets
+# External Software
 
-When you click the **Render** button a document will be generated that includes:
+## IGV
 
--   Content authored with markdown
--   Output from executable code
-
-## Code
-
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
