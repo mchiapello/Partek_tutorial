@@ -1,5 +1,6 @@
 project:
   title: "Partek_tutorial"
+  output-dir: docs
 
-
+editor: source
 
