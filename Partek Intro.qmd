@@ -12,6 +12,18 @@ format:
         numbers: true
 ---
 
+## Obiettivi
+
+:::{.incremental}
+1. Pochi concetti
+
+1. Solo cose utili
+
+1. Chiari e comprensibili
+
+1. Interazione
+:::
+
 # Introduzione
 
 ## Introduzione
@@ -21,9 +33,8 @@ format:
 1.  Introduzione generale alla bioinformatica
     1.  Diversi tipi di file (vcf, bed, fasta, fastq, gff, ...)
     2.  Cosa fanno i principali software
-2.  Overview della pipeline per chiamata delle varianti
-3.  Introduzione a Partek
-4.  Creazione di pipeline con Partek
+2.  Introduzione a Partek
+3.  Creazione di pipeline con Partek
 
 ## Introduzione
 
